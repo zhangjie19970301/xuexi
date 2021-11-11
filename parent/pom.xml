@@ -10,6 +10,7 @@
     <modules>
         <module>demo1</module>
         <module>demo2</module>
+        <module>gateway</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -39,6 +40,10 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+           <!-- <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-gateway</artifactId>
+            </dependency>-->
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -57,10 +62,7 @@
              <artifactId>spring-cloud-starter-loadbalancer</artifactId>
          </dependency>-->
         <!--gateway-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
