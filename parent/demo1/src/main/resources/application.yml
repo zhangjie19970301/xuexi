@@ -24,3 +24,8 @@ fdfs:
   tracker-list:  # tracker地址：你的虚拟机服务器地址+端口（默认是22122）
     - 47.106.185.191:22122
   ret-post: 47.106.185.191:22000
+my:
+  thread:
+    core-size: 10
+    max-size: 20
+    keep-alive-time: 200

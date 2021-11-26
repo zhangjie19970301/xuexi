@@ -1,12 +1,10 @@
 package com.zh.controller;
 
-import com.alibaba.excel.EasyExcel;
 import com.github.tobato.fastdfs.domain.StorePath;
 import com.github.tobato.fastdfs.domain.ThumbImageConfig;
 import com.github.tobato.fastdfs.service.FastFileStorageClient;
-import com.zh.bean.DemoData;
+import com.zh.annotation.AopAnnotation;
 import com.zh.bean.Users;
-import com.zh.listener.DemoDataListener;
 import com.zh.service.UserService;
 import com.zh.zz.GetPropertiesService;
 import org.apache.commons.io.FilenameUtils;
@@ -14,14 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 
 @RestController
 public class TestController {
-
     @Autowired
     private UserService userService;
     @Autowired
