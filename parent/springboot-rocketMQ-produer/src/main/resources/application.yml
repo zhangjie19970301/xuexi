@@ -1,0 +1,21 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: demo-
+# application.yaml
+rocketmq:
+  name-server: 47.106.185.191:9876
+  producer:
+    group: test-group
+    # 发送同步消息失败时，重试次数，默认是 2
+    retry-times-when-send-failed: 2
+    # 发送异步消息失败时，重试次数，默认是 2
+    retry-times-when-send-async-failed: 2
+    # 发送消息超时时间，默认是 3s
+    send-message-timeout: 3000
+
+    # 连接阿里云RocketMQ时需要配置AK与SK
+#    access-key:
+#    secret-key:
+
